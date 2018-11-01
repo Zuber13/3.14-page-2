@@ -1,0 +1,926 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: DinPro;
+    src: url("./din/DINPro-Regular.woff2");
+}
+
+@font-face {
+    font-family: DinProLight;
+    src: url("./din/DINProLight.woff2");
+}
+
+* {
+    font-family: DinPro;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.header-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/Radiance_realestate_vol_01_final_02.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.small-size-header {
+    display: none;
+}
+
+.logo {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+
+nav {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+nav ul li:first-child:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.1px;
+    background: #720dd4;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.1px;
+    left: 0;
+    bottom: -6px;
+    background: #720dd4;
+}
+
+nav ul li:hover:before {
+    width: 100%;
+    transition: 1s ease;
+}
+
+.sign-up-div {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.sign-up-div>div {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+
+.sign-up-div .Sign-Up {
+    color: #ffff;
+    padding: 5px 15px;
+    background: #fff;
+    color: #444444;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: DINPro;
+}
+
+
+.first-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfomance-content {
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 28px;
+    position: relative;
+    top: 50px;
+}
+
+.perfomance-text-div {
+    width: 700px;
+    padding-left: 20px;
+    color: #444444;
+}
+
+.perfomance-text-div p {
+    font-weight: 200;
+    font-weight: 200;
+    font-family: DinProLight;
+    position: relative;
+    top: -17px;
+}
+
+.contact-div {
+    width: 100%;
+    padding-left: 21px;
+}
+
+.contact-div h3 {
+    font-weight: 200;
+    font-size: 25px;
+    color: #444444;
+}
+
+.contact-div form input[type="text"] {
+    width: 300px;
+    padding: 13px;
+    border-radius: 5px;
+    outline: none;
+    font-family: DinProLight;
+    border: 1px solid #ddd;
+    font-size: 20px;
+
+}
+
+::placeholder {
+    color: #ddd;
+    font-size: 24px;
+}
+
+form input[type="submit"] {
+    width: 150px;
+    padding: 20px;
+    position: relative;
+    left: 35px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #780dd7;
+    vertical-align: middle;
+}
+
+.features-section {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.features-section .heading {
+    font-size: 35px 30px;
+}
+
+.heading {
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    font-size: 25.5px !important;
+    position: relative;
+    padding: 35px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.heading:before {
+    content: "";
+    width: 120px;
+    height: 2.5px;
+    background: #444444;
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+}
+
+span {
+    color: #720dd8;
+}
+
+.features-section .features-content {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.features-section .features-content div {
+    max-width: 530px;
+    height: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 50px;
+    padding: 60px 40px;
+    box-shadow: 0px 15.5px 48.6px 11.4px rgba(0, 0, 0, 0.06);
+    padding-bottom: 20px;
+}
+
+.features-section .features-content div p {
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    color: #444444;
+    font-weight: 300;
+    position: relative;
+    bottom: 15px;
+    letter-spacing: 0.5px;
+    font-family: DinProLight;
+}
+
+.features-section .features-content div:nth-child(2) {
+    transform: scale(1.2);
+    box-shadow: 0px 15.5px 48.6px 11.4px rgba(0, 0, 0, 0.06);
+}
+
+.how-radien-work {
+    width: 100%;
+}
+
+.how-radien-work .content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px 0;
+}
+
+.how-radien-work .content .user-choice {
+    width: 59%;
+    margin: 0 auto;
+}
+
+.how-radien-work .content .user-choice .inline-block {
+    display: flex;
+}
+
+.inline-element h2 {
+    position: relative;
+    left: 20px;
+}
+
+.how-radien-work .content .user-choice .inline-block .choice-div {
+    width: 13%;
+    text-align: left;
+}
+
+.how-radien-work .content .user-choice .inline-block .text-div {
+    width: 75%;
+}
+
+.text-div p {
+    font-size: 24px;
+    color: #444444;
+    text-align: left;
+    font-weight: normal;
+    opacity: 0.5;
+    font-family: DinProLight;
+    position: relative;
+    bottom: 15px;
+}
+
+.how-radien-work .content .user-choice .inline-block div img {
+    position: relative;
+    top: 25px;
+}
+
+.how-radien-work .content .user-profile {
+    width: 46%;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+}
+
+.case-studies {
+    width: 100%;
+}
+
+.case-studies .heading {
+    position: relative;
+    top: 39px;
+}
+
+.case-studies-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #720dd830;
+    padding: 60px 0;
+    position: relative;
+}
+
+.arrow-img {
+    width: 1380px;
+    margin: 0 auto;
+    position: relative;
+    top: 220px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-img div {
+    width: 50px;
+    height: 50px;
+    background: #ffff;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0px 15.5px 48.6px 11.4px rgba(0, 0, 0, 0.06);
+}
+
+
+.case-studies-content>div {
+    width: 380px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    margin: 0 18px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+
+.case-studies-content div .inline-element {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.case-studies-content .google-text {
+    width: 100%;
+    margin: -20px 10px;
+}
+
+.case-studies-content .google-text p {
+    color: #444444;
+    font-family: DinProLight;
+    font-size: 22px;
+}
+
+.case-studies-content>div h1 {
+    color: #0000;
+}
+
+.our-client {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.our-client .clients {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 23px;
+}
+
+.clients div {
+    width: 18%;
+    display: inline-block;
+    margin: 0 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+
+    .header-section {
+        width: 100%;
+        background-image: url("./images/Radiance_realestate_vol_01_final_02.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .small-size-header {
+        width: 100%;
+        display: block;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        background: #ffffff;
+    }
+
+
+
+    .small-size-header .fa {
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sidebar-list {
+        width: 100%;
+        background: #ffffff;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .sidebar-list .left-side {
+        width: 59%;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .sidebar-list .right-side {
+        width: 29%;
+        display: inline-block;
+        text-align: right;
+        float: right;
+        position: relative;
+        bottom: 76px;
+        right: 5px;
+        font-size: 20px;
+    }
+
+    .sidebar-list h2,
+    img {
+        font-weight: 400;
+        color: #444444;
+    }
+
+    .hamburgur-image {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 35px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .hamburgur-image .fa {
+        float: left;
+        font-size: 30px;
+        color: #444444;
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        width: 70%;
+        display: inline-block;
+        height: 100vh;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        left: -600px;
+        z-index: 1;
+        transition: 1s ease;
+    }
+
+    .active.nav-bar {
+        left: 0;
+    }
+
+    .nav-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar ul li {
+        width: 100%;
+        margin: 25px 0;
+        border-bottom: 1px solid #ddd;
+        font-family: DinProLight;
+        padding-bottom: 6px;
+    }
+
+    .nav-bar ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: DinPro;
+        color: #444444;
+        font-weight: 200;
+        position: relative;
+        bottom: 12px;
+        left: 50px;
+    }
+
+    .perfomance-content {
+        position: relative;
+        bottom: 24px;
+    }
+
+    .perfomance-text-div,
+    .contact-div h3 {
+        color: #ffffff;
+    }
+
+    .contact-div {
+        max-width: 400px;
+        height: 200px;
+    }
+
+
+
+    .contact-div form {
+        position: relative;
+        left: -35px;
+    }
+
+    .contact-div form input[type="text"] {
+        position: relative;
+        bottom: 10px;
+        left: 33px;
+        padding: 15px;
+    }
+
+
+
+    .contact-div form input[type="submit"] {
+        position: relative;
+        bottom: -4px;
+        padding: 15px;
+    }
+
+    .features-section .features-content {
+        overflow: scroll;
+        overflow-y: hidden;
+        width: 90%;
+    }
+
+    .features-section .features-content>div {
+        min-width: 200px;
+        font-size: 10px;
+        margin: 5px;
+        box-shadow: none;
+        padding: 20px 25px;
+        padding-bottom: 0px;
+
+    }
+
+
+    .features-section .features-content div:nth-child(2) {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    .how-radien-work .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-radien-work .content {
+        padding-top: 5px;
+    }
+
+    .how-radien-work .content .user-choice {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .user-choice .inline-block {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .choice-div,
+    .text-div {
+        width: 80%;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .text-div p {
+        font-size: 20px;
+    }
+
+    .user-profile {
+        margin: 0 50px;
+        display: block;
+        position: relative;
+        top: 20px;
+    }
+
+    .arrow-img {
+        width: 100%;
+        display: none;
+    }
+
+    .case-studies {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .case-studies-content {
+        width: 90%;
+        overflow: scroll;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: flex-start;
+        background: none;
+        padding-bottom: 10px;
+    }
+
+    .case-studies-content>div {
+        min-width: 285px;
+        border: 1px solid #ddd;
+    }
+
+    .case-studies-content .inline-element {
+        min-width: 219px;
+        margin: 0px;
+    }
+
+
+    .inline-element h2 {
+        left: 7px;
+    }
+
+    .clients div {
+        width: 40%;
+        display: inline-block;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .perfomance-content {
+        width: 100%;
+    }
+
+    .perfomance-text-div,
+    .contact-div {
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .case-studies {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .perfomance-content {
+        width: 90%;
+    }
+
+    .perfomance-text-div,
+    .contact-div {
+        font-size: 21px;
+        width: 90%;
+    }
+
+    .user-profile {
+        display: block;
+        position: relative;
+        top: 20px;
+    }
+
+    .user-profile img {
+        width: 400px;
+    }
+
+    .clients div {
+        min-width: 25%;
+        display: inline-block;
+    }
+
+    .clients div img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    .perfomance-text-div {
+        font-size: 24px;
+    }
+
+    .contact-div h3 {
+        font-size: 25px;
+    }
+
+    .perfomance-content {
+        position: relative;
+        top: 3px;
+    }
+
+    .user-profile img {
+        width: 300px;
+    }
+
+    .case-studies-content>div {
+        min-width: 280px;
+        margin: 4px 4px;
+    }
+}
+
+/* 
+@media screen and (max-width: 450px) {
+  .case-studies-content > div {
+    min-width: 280px;
+    margin: 0;
+  }
+} */
+
+@media screen and (max-width: 402px) {
+    .contact-div form input[type="text"] {
+        width: 200px;
+    }
+
+    form input[type="submit"] {
+        width: 150px;
+        font-size: 20px;
+    }
+
+    ::placeholder {
+        font-size: 15px;
+    }
+
+    .heading {
+        width: 87%;
+    }
+
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    .heading:before {
+        bottom: 33px;
+    }
+
+    .how-radien-work .content {
+        padding-bottom: 0;
+    }
+
+    .user-choice .inline-block img {
+        width: 40px;
+    }
+
+    .text-div p {
+        font-size: 15px;
+    }
+
+    .text-div h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+
+    .perfomance-content {
+        width: 90%;
+    }
+
+    .perfomance-text-div {
+        font-size: 22px;
+    }
+
+
+    .heading {
+        width: 90%;
+        padding: 0;
+    }
+
+    .heading:before {
+        left: 5px;
+        bottom: 5px;
+    }
+
+    .contact-div h3 {
+        font-size: 22px;
+    }
+
+    .features-section {
+        width: 100%;
+    }
+
+
+    .features-section .features-content {
+        width: 90%;
+    }
+
+
+
+    .features-content>div {
+        min-width: 157px;
+    }
+
+    .features-content>div img {
+        width: 70px;
+    }
+
+    .features-content>div h2 {
+        font-size: 21px;
+    }
+
+    .case-studies {
+        width: 100%;
+        background
+    }
+
+    .case-studies-content {
+        padding-left: 0;
+    }
+
+    .case-studies-content>div {
+        min-width: 205px;
+        font-size: 12px;
+    }
+
+    .case-studies-content .google-text p {
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+        color: #444444;
+        font-weight: 700;
+    }
+
+    .clients {
+        text-align: left;
+    }
+
+    .clients div {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    .sidebar-list .left-side {
+        width: 80%;
+    }
+
+    .perfomance-text-div {
+        font-size: 18px;
+    }
+
+    .contact-div h3 {
+        font-size: 22px;
+    }
+
+    .user-profile img {
+        position: relative;
+        left: -15px;
+    }
+
+    .heading h2 {
+        font-size: 22px;
+    }
+
+    .text-div h1 {
+        font-size: 17px;
+    }
+}
